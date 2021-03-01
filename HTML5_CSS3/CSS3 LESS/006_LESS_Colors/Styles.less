@@ -1,0 +1,23 @@
+div {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+
+@base-color: #fff200;
+
+div.class1 {
+	background-color: lighten(@base-color, 30%);
+}
+
+div.class2 {
+	background-color: darken(@base-color, 20%);
+}
+
+div.class3 {
+	background-color: saturate(@base-color, 40%);
+}
+
+div.class4 {
+	background-color: desaturate(@base-color, 50%);
+}

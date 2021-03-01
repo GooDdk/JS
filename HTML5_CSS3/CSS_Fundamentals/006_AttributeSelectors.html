@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attribute Selector</title>
+	<style>
+		
+		input {
+			margin:10px;
+		}
+
+		input[required] {
+			border: 1px solid red;
+		}
+
+		input[type=submit] {
+			border: 1px solid green;
+		}
+
+	</style>
+</head>
+<body>
+	<form>
+		<input type="text" required="required" />
+		<br />
+		<input type="password" />
+		<br />
+		<input type="submit" />
+	</form>
+</body>
+</html>

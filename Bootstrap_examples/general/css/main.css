@@ -1,0 +1,22 @@
+.container {
+	background: #d34768;
+
+}
+
+.row{
+	background: #e3de4d;
+	height: 300px;
+}
+
+.row div{
+	text-align: center;
+	height: 50px;
+}
+
+.row div:nth-child(odd){
+	background: #4e45c6;
+}
+
+.row div:nth-child(even){
+	background: #51c645;
+}

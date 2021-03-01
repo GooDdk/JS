@@ -1,0 +1,24 @@
+<html>
+
+<head>
+	<script>
+		var c = 'blue';
+		var d = 'jpg1.jpg';
+		function f(){
+			document.getElementById('t').style.color=c;
+
+			c=='blue'?c='red':c='blue';
+			setTimeout('f()',100);
+
+			document.getElementById('pic').src= d;
+			d=='jpg1.jpg'?d='jpg2.jpg':d='jpg1.jpg';
+		}
+	</script>
+</head>
+	<body onload="f()">
+		<span id="t">Опеределенный текст</span>
+		<p>
+			<img id="pic" src="jpg1.jpg" width="650" height="800" alt="">
+		</p>
+	</body>
+</html>

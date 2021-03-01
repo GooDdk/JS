@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>empty</title>
+	<style>
+
+		span:empty {
+			background: red;
+			padding: 3px;
+			margin: 7px;
+		}
+
+			span:empty::before {
+				content: "Пустой элемент";
+				font-weight: bold;
+			}
+	</style>
+</head>
+<body>
+	<span></span>
+	<p>
+		Lorem ipsum dolor<span></span> sit amet, consectetur adipisicing elit. Facilis tempore similique distinctio voluptatem perferendis, suscipit debitis, ad reiciendis quia, quo ex accusantium? Sapiente hic modi, neque optio nihil praesentium natus?
+		<span></span>
+	</p>
+</body>
+</html>

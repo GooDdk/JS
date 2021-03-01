@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Управление воспроизведением через JavaScript</title>
+</head>
+<body>
+
+	<video id="video" style="border: 2px solid gray; cursor: pointer;">
+		<source src="video/vsvideo.mp4" />
+		<source src="video/vsvideo.ogg" />
+		<source src="video/vsvideo.webm" />
+	</video>
+
+	<script>
+		window.onload = function () {
+			var videoElm = document.getElementById("video");
+
+			videoElm.width = videoElm.videoWidth / 2;
+			videoElm.height = videoElm.videoHeight / 2;
+
+			videoElm.onmouseover = function () {
+				this.play();
+			}
+
+			videoElm.onmouseout = function () {
+				this.pause();
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blockquote sample</title>
+	<style>
+		section {
+			width: 700px;
+			height: 70px;
+			margin: 100px auto 0;
+		}
+
+		p {
+			margin: 10px;
+			padding: 0 40px;
+			text-align: center;
+
+		}
+
+		blockquote:before {
+			content: " ";
+			position: relative;
+			bottom: -25px;
+
+			background: url(quotationmark.png) -3px -3px #ddd;
+			border-radius: 25px;
+			display: black;
+			height: 25px;
+			width: 25px;  
+
+			-moz-transition: background-color 350ms;
+			-o-transition: background-color 350ms;
+			-webkit-transition: background-color 350ms;
+			transition: background-color 350ms;
+
+		}
+
+		blockquote:after {
+			content: " ";
+			float: right;
+			position: -25px;
+			top: -25px;
+			
+			border-radius: 25px
+			background: url(quotationmark.png) -1px -32px #ddd;
+			display: black;
+			height: 25px;
+			width: 25px;  
+
+			-moz-transition: background-color 350ms;
+			-o-transition: background-color 350ms;
+			-webkit-transition: background-color 350ms;
+			transition: background-color 350ms;
+		}
+
+		blockquote:hover:after, blockquote:hover:before {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<blockquote>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto hic at, nostrum vitae odio consequuntur eligendi nesciunt nobis corporis autem ea unde, labore veniam accusamus temporibus tempore suscipit deleniti repellat.
+				<br />
+				- C.A. R. Hoare
+			</p>
+		</blockquote>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scale transformation</title>
+	<script type="text/javascript">
+		function loadHandler() {
+
+			var $ = function (id) {
+				return document.getElementById(id);
+			}
+
+			var context = $("canvas").getContext("2d")
+
+			var img = new Image();
+			img.src = "logo.png";
+			img.onload = draw;
+			$("btn").onclick = draw;
+
+			function draw() {
+
+				context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+
+				var x = $("X").value;
+				var y = $("Y").value;
+
+				context.save();
+
+				context.scale(x, y);
+				context.drawImage(img, 0, 0, 100, 100);
+
+				context.restore();
+			}
+		}
+
+		if (window.addEventListener)
+			window.addEventListener("load", loadHandler, true);
+	</script>
+</head>
+<body>
+	<canvas id="canvas" height="300" width="300">
+	</canvas>
+	<div style="border: 1px solid gray; padding: 8px; margin: 8px;">
+		Масштаб X
+		<input type="text" id="X" value="1" />
+		Масштаб Y
+		<input type="text" id="Y" value="1" />
+		<input type="button" id="btn" value="scale" />
+		
+	</div>
+</body>
+</html>

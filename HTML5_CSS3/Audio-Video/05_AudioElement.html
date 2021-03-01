@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Свойство currentTime</title>
+</head>
+<body>
+
+	<audio>
+		<source src="audio/Vivaldi.mp3">
+		<source src="audio/Vivaldi.ogg">
+	</audio>
+
+	<button title="Воспроизвести с 30 секунд" onclick="playAt(30);">30 секунд</button>
+
+	<script>
+		function playAt(seconds) {
+			var audio = document.getElementByTagName("audio")[0];
+			audio.currentTime = seconds;
+			audio.play();
+		}
+	</script>
+
+	<button title="Остановить воспроизведение" onclick="stopAudio();">STOP</button>
+	
+	<script>
+		function stopAudio() {
+			var audio = document.getElementByTagName("audio")[0];
+			audio.currentTime = 0;
+			audio.pause();
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <script>
+            var m = 5 + '2';
+            var n = "2" / 2;
+            console.log(n);
+            var t = 14 % 8.5;
+            
+            var y = (5==='5');
+            alert("m= " + m + " / n= " + n +" / t= "+ t +" / y= "+ y);
+            
+            
+            alert( true || true );
+            alert( false || true );
+            alert( true || false );
+            alert( false || false );
+            
+            alert( true && true );
+            alert( false && true );
+            alert( true && false );
+            alert( false && false );
+            
+            alert( !true );
+            
+            alert( !0 );
+            
+        
+            var x = 10;
+            
+            if(x>10){
+                x++;
+            }
+            else if(x<10){
+                x--;
+            }
+            else{
+                x=0;
+            }
+            
+            
+            
+            var d = 10;
+            if(d>=10){
+                d++;
+                if(d<20){
+                    if(d>10){
+                        d--;
+                    }
+                    d+=10;
+                }
+                else{
+                    d-=5;
+                    if(d>10){
+                        d=0;
+                    }
+                }
+                d++;
+            }
+            alert("x= " + x + " / d= " + d);
+
+            
+            function compare_numbers(x, y){
+                if(x > y)
+                    alert("x > y");
+                
+                else if (x < y)
+                    alert("x < y");
+                
+                else
+                    alert("x = y");
+                
+            }
+            
+            compare_numbers(10, 20);
+            compare_numbers(20, 10);
+            compare_numbers(20, 20);
+    </script>
+    </body>
+</html>

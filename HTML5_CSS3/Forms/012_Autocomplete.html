@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Атрибут autocomplete</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Авторизация</legend>
+			<p>
+				<label>
+					Имя пользователя
+					<input type="text" name="username" autocomplete="off" />
+				</label>
+			</p>
+			<p>
+				<label>
+					Пароль
+					<input type="password" name="pwd" autocomplete="off" />
+				</label>
+			</p>
+
+		</fieldset>
+		<p>
+			<input type="submit" value="Отправить">
+		</p>
+	</form>
+	<a href="http://google.com">Проверка работы атрибута формы</a>
+	<p>Перейдите по ссылки, после чего нажмите на кнопку "Black". Обратите внимание что браузер не запомнил значение в поле ввода пароля</p>
+</body>
+</html>

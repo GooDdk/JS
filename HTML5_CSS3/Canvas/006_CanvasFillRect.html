@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fillRect()</title>
+	<script src="Modernizr-2.0.6.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		function draw() {
+
+			if (!Modernizr.canvas) return;
+
+			var canvas = document.getElementById("canvas");
+			var context = canvas.getContext("2d");
+
+			context.fillStyle = "blue";
+			context.fillRect(100, 100, 50, 50);
+
+			context.strokeStyle = "red";
+			context.lineWidth = 10;
+			context.strokeRect(100, 100, 50, 50);
+
+			context.clearRect(100, 100, 50, 50);
+		}
+
+		if (window.addEventListener)
+			window.addEventListener("load", draw, true);
+	</script>
+</head>
+<body>
+	<canvas id="canvas" height="300" width="300" style="border: solid 1px black;">
+		Ваш браузер не поддерживает элемент <b>Canvas</b>
+	</canvas>
+</body>
+</html>

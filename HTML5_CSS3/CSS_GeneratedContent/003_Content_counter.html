@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>counter</title>
+	<style>
+		body {
+			counter-reset: myIndex;
+		}
+
+		p{
+			counter-increment: myIndex;
+		}
+
+			p:before {
+				content: "Урок " counter(myIndex) ". ";
+				font-weight: bold;
+			}
+	</style>
+</head>
+<body>
+	<p>Введение</p>
+	<p>Семантическая разметка</p>
+	<p>Элементы video и audio</p>
+	<p>Geolocation API</p>
+	<p>формы HTML5</p>
+</body>
+</html>

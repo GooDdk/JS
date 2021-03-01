@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rotate transformation</title>
+	<script type="text/javascript">
+		function loadHandler() {
+
+			var $ = function (id) {
+				return document.getElementById(id);
+			}
+
+			var context = $("canvas").getContext("2d")
+
+			var img = new Image();
+			img.src = "logo.png";
+			img.onload = draw;
+			$("btn").onclick = draw;
+
+			function draw() {
+
+				context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+
+				var angle = $("angle").value;
+				angle = angle * Math.PI / 180;
+
+				context.save();
+
+				context.rotate(angle);
+				context.drawImage(img, 0, 0, 100, 100);
+
+				context.restore();
+			}
+		}
+
+		if (window.addEventListener)
+			window.addEventListener("load", loadHandler, true);
+	</script>
+</head>
+<body>
+	<canvas id="canvas" height="300" width="300">
+	</canvas>
+	<div style="border: 1px solid gray; padding: 8px; margin: 8px;">
+		Угол поворота
+		<input type="text" id="angle" value="0" />
+		<input type="button" id="btn" value="rotate" />
+		
+	</div>
+</body>
+</html>

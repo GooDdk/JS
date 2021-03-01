@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Font-face</title>
+	<style type='text/css'>
+
+		@font-face {
+			font-family: heinrich;
+			src: url('heinrich.ttf'), url('heinrich.eot');
+		}
+
+		@font-face {
+			font-family: heinrich;
+			font-style: italic;
+			src: url('heinrichitalic.ttf'), url('heinrichitalic.eot');
+		}
+
+		p {
+			font-family: heinrich;
+			font-size: 1.5em;
+		}
+	</style>
+</head>
+<body>
+	<p>Для обычного текста будет использован шрифт heinrich.</p>
+	<p><i>Для курсивного текста будет использован шрифт heinrich italic.</i></p>
+	<p>А этот обычный текст с <i>"вставками"</i> курсивного.</p>
+</body>
+</html>

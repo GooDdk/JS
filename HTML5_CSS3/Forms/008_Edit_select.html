@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Элементы datalist</title>
+</head>
+<body>
+	<form>
+		<p>
+			<label>
+					Сумма пожертвования
+					<input type="text" name="donation" list="donations" />
+			</label>
+		</p>
+			
+		<datalist id="donations">
+			<option value="10.00">10.00 $</option>
+			<option value="25.00">25.00 $</option>
+			<option value="50.00">50.00 $</option>
+		</datalist>
+		<p>
+			<input type="submit" value="Отправить">
+		</p>
+	</form>
+</body>
+</html>

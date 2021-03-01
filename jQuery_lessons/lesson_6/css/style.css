@@ -1,0 +1,9 @@
+label {
+	margin-top: 20px;
+}
+input[type='radio']{dispaly: inline-block; margin-left: 5px;}
+input[type='checkbox']{dispaly: inline-block; margin-left: 5px;}
+input[type='reset']{dispaly: inline-block; margin-left: 5px;}
+input[type='image']{dispaly: inline-block; margin-left: 5px;}
+input[type='button']{dispaly: inline-block; margin-left: 5px;}
+input[type='sumbit']{dispaly: inline-block; margin-left: 5px;}	
